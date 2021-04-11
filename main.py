@@ -54,7 +54,7 @@ data_gen_args = dict(
 
 #draw the training process of every epoch
 def show_train_history(train_history, train, loss, plt_save_name=plt_save_name):
-    plt.plot(train_history.history['acc'])
+    plt.plot(train_history.history['accuracy'])
     plt.plot(train_history.history['loss'])
     plt.title('Train hist')
     plt.ylabel(train)
